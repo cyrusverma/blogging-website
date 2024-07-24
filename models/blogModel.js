@@ -18,7 +18,11 @@ const blogSchema = mongoose.Schema({
  user:{
     type: mongoose.Schema.Types.ObjectId,
     refer:"users"
- }
+ },
+ date_and_time: {
+   type: Date,
+   default: Date.now  // Default value is the current date and time
+}
 
 
 });
